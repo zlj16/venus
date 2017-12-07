@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<config>        
+    <group name="venus helloService Config" description="venus Server side Config">
+        <property name="venus.service.helloService.ipAddressList" defaultValue="127.0.0.1:16800" description="venus hello service ipAddress"/>
+        <property name="venus.service.helloService.serializeType" defaultValue="0" description="venus hello service serialize Type"/>
+    </group>
+    
+    <group name="venus socket buffer" description="venus socket buffer">
+        <property name="venus.socket.sendBufferSize" defaultValue="64" description="socket send buffer size (unit:K)"/>
+        <property name="venus.socket.receiveBufferSize" defaultValue="64" description="socket receive buffer size (unit:K)"/>
+    </group>
+    
+</config>

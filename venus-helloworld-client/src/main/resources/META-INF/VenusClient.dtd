@@ -1,0 +1,26 @@
+<!ELEMENT authenticator ( property+ ) >
+<!ATTLIST authenticator class NMTOKEN #REQUIRED >
+
+<!ELEMENT endpoint EMPTY >
+<!ATTLIST endpoint name NMTOKEN #REQUIRED >
+<!ATTLIST endpoint soTimeout NMTOKEN #REQUIRED >
+
+<!ELEMENT factory ( property+ ) >
+
+<!ELEMENT pool ( property+ ) >
+
+<!ELEMENT property ( #PCDATA ) >
+<!ATTLIST property name ID #REQUIRED >
+
+<!ELEMENT remote ( factory, pool, authenticator ) >
+<!ATTLIST remote name NMTOKEN #REQUIRED >
+
+<!ELEMENT remotes ( remote ) >
+
+<!ELEMENT service ( endpoint? ) >
+<!ATTLIST service remote NMTOKEN #REQUIRED >
+<!ATTLIST service type NMTOKEN #REQUIRED >
+
+<!ELEMENT services ( service+ ) >
+
+<!ELEMENT venus-client ( remotes, services ) >

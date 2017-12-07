@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<venus-client xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="venus-client.xsd">
+	
+	<!-- 服务接口列表 -->
+	<services>
+		<!-- 定义服务以及指定该服务提供方的远程相关配置 -->
+		<service beanName="myService2" type="com.meidusa.venus.hello.api.HelloService">
+			<property name="ipAddressList">${venus.service.helloService.ipAddressList}</property>
+			<endpoint name="getHello" timeWait="2000"/>
+		</service>
+		
+		<service beanName="myService" type="com.meidusa.venus.hello.api.HelloService">
+			<property name="ipAddressList">${venus.service.helloService.ipAddressList}</property>
+			<endpoint name="getHello" timeWait="2000"/>
+		</service>
+		
+		<service type="com.meidusa.venus.hello.api.ParameterizedService">
+			<property name="ipAddressList">${venus.service.helloService.ipAddressList}</property>
+		</service>
+	</services>
+</venus-client>

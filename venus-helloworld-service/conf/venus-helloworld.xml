@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<venus-server>
+	<services>
+		<service type="com.meidusa.venus.hello.api.HelloService" version="{0,1,2,3,4}">
+			<property name="instance">${helloService}</property>
+		</service>
+		<service type="com.meidusa.venus.hello.api.ParameterizedService">
+			<instance class="com.meidusa.venus.hello.impl.DefaultParameterizedService"/>
+		</service>
+		
+	</services>
+</venus-server>

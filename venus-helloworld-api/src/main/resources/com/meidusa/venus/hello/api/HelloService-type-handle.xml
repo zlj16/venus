@@ -1,0 +1,13 @@
+<service-type-handle>
+	<endpoint name="testChild">
+		<params>
+			<if expr="hello.name=='daisy'">
+				<param name="hello" class="com.meidusa.venus.hello.entity.DaisyHello" />
+			</if>
+		</params>
+		<result>
+			<if expr="name=='daisy'" class="com.meidusa.venus.hello.entity.DaisyHello">
+			</if>
+		</result>
+	</endpoint>
+</service-type-handle>

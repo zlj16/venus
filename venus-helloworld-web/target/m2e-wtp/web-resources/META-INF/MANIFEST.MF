@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Built-By: ZLJ
+Class-Path: jackson-core-asl-1.9.13.jar jackson-mapper-asl-1.9.13.jar 
+ toolkit-common-util-1.2.4.jar oro-2.0.8.jar commons-digester-1.8.jar 
+ commons-beanutils-1.8.0.jar commons-lang-2.4.jar commons-pool-1.6.jar
+  slf4j-api-1.7.5.jar logback-classic-1.1.7.jar freemarker-2.3.20.jar 
+ validation-api-1.1.0.Final.jar hibernate-validator-5.2.2.Final.jar jb
+ oss-logging-3.2.1.Final.jar classmate-1.1.0.jar logback-core-1.1.7.ja
+ r ognl-3.0.1.jar javassist-3.12.1.GA.jar spring-core-4.3.3.RELEASE.ja
+ r commons-logging-1.1.1.jar spring-beans-4.3.3.RELEASE.jar spring-con
+ text-4.3.3.RELEASE.jar spring-aop-4.3.3.RELEASE.jar spring-expression
+ -4.3.3.RELEASE.jar spring-context-support-4.3.3.RELEASE.jar spring-we
+ b-4.3.3.RELEASE.jar spring-webmvc-4.3.3.RELEASE.jar venus-client-3.3.
+ 0.jar venus-common-base-3.3.0.jar venus-annotations-3.3.0.jar asm-all
+ -3.3.1.jar bsh-2.0b4.jar reflections-0.9.9-RC1.jar guava-11.0.2.jar j
+ sr305-1.3.9.jar javassist-3.16.1-GA.jar toolkit-net-nio-1.0.15.jar to
+ olkit-common-pool-1.2.8.jar venus-common-io-3.3.0.jar fastbson-1.3.3.
+ jar ini4j-0.5.2.jar fastjson-1.4.0.jar venus-extension-athena-3.3.0.j
+ ar venus-common-exception-3.3.0.jar toolkit-common-bean-1.3.6.jar com
+ mons-collections-3.2.1.jar commons-io-2.4.jar commons-fileupload-1.3.
+ 1.jar httpclient-4.3.3.jar httpcore-4.3.2.jar commons-codec-1.6.jar v
+ enus-helloworld-api-3.0.0-SNAPSHOT.jar fastmark-1.0.2.jar plexus-clas
+ sworlds-2.4.4-HEXNOVA.jar toolkit-web-runtime-1.0.1.jar tomcat-embed-
+ jasper-8.5.5.jar tomcat-embed-core-8.5.5.jar ecj-4.5.1.jar tomcat-emb
+ ed-el-8.5.5.jar tomcat-jasper-8.5.5.jar tomcat-servlet-api-8.5.5.jar 
+ tomcat-juli-8.5.5.jar tomcat-el-api-8.5.5.jar tomcat-api-8.5.5.jar to
+ mcat-util-scan-8.5.5.jar tomcat-util-8.5.5.jar tomcat-jasper-el-8.5.5
+ .jar tomcat-jsp-api-8.5.5.jar toolkit-common-runtime-1.3.6.jar dom4j-
+ 1.6.1.jar xml-apis-1.0.b2.jar ant-1.7.0.jar ant-launcher-1.7.0.jar ja
+ vax.xml.rpc-api-1.1.1.jar
+Build-Jdk: 1.8.0_131
+Created-By: Maven Integration for Eclipse
+

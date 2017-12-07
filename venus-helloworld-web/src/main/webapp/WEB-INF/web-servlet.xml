@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!-- JSR-303 support will be detected on classpath and enabled automatically -->
+    <mvc:annotation-driven/>
+    
+	<!-- 声明DispatcherServlet不要拦截下面声明的目录 -->
+	<mvc:resources mapping="/resources/**" location="/static/"/>
+	
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+
+    <!-- JSP ViewResolver -->
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!--<property name="suffix" value=".jsp"/>-->
+        <property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView"/>
+    </bean>
+
+
+    <bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+
+        <property name="cookieName" value="clientlanguage"/>
+
+        <!-- in seconds. If set to -1, the cookie is not persisted (deleted when browser shuts down) -->
+        <property name="cookieMaxAge" value="-1"/>
+
+    </bean>
+
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="4096000"/>
+        <property name="resolveLazily" value="false"/>
+    </bean>
+
+    <context:component-scan base-package="com.venus.hello.web.controller" />
+</beans>
